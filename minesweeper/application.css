@@ -1,0 +1,50 @@
+html, body, h1, ul, li, div, a {
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+  font: inherit;
+  text-align: inherit;
+
+  background: transparent;
+}
+
+.group:after{
+  clear:both;
+  content: "";
+  display: block;
+}
+
+
+
+.game {
+  width: 600px;
+  margin: 50px auto;
+  border: 5px solid blue;
+}
+
+.game-display {
+  width: 200px;
+  margin: auto;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  position: relative;
+}
+
+h1 {
+  color: red;
+}
+
+li {
+  float: left;
+}
+
+.tile {
+  width: 10px;
+  height: 10px;
+  border: black solid 1px;
+}
