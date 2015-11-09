@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <script type="text/jsx" src="./javascript/autocomplete.js"></script>
+    <script type="text/jsx" src="./javascript/weatherclock.js"></script>
+    <script type="text/jsx" src="./javascript/tabs.js"></script>
+
+    <script type="text/jsx">
+      React.render(<Autocomplete names={["Damon", "David", "Harry", "Lily", "Sennacy", "Cody"]} />,
+            document.getElementById('auto-complete'));
+      React.render(<WeatherClock />, document.getElementById('weather-clock'));
+      React.render(
+        <Tabs
+          items={[{title: "pikachu", content: "electric mouse"},
+                  {title: "squirtle", content: "water elemental turtle"},
+                  {title: "raichu", content: "a shitty pikachu. avoid."}]}
+        />,
+        document.getElementById('tabs'));
+    </script>
+
+
+  </head>
+  <body>
+    <div id="auto-complete"></div>
+    <div id="weather-clock"></div>
+    <div id="tabs"></div>
+  </body>
+</html>
